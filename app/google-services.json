@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "412654704209",
+    "project_id": "debtfreedomapp-91799",
+    "storage_bucket": "debtfreedomapp-91799.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:412654704209:android:d63594926f1277c7018a70",
+        "android_client_info": {
+          "package_name": "com.example.debtfreedomapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "412654704209-shv4oebt59j2tph4fd0ciemjg3gkgekf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBV59STdLMWxGi5f5QLyNEl-S-LrSj0Prc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "412654704209-shv4oebt59j2tph4fd0ciemjg3gkgekf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

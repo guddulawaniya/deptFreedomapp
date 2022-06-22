@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/guddu/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/drawable/arrow_drop_down.xml" value="0.1555" />
+        <entry key="..\:/Users/guddu/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/drawable/down_arrow.xml" value="0.1555" />
+        <entry key="..\:/Users/guddu/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.1555" />
+        <entry key="..\:/Users/guddu/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/drawable/ic_baseline_expand_less_24.xml" value="0.1555" />
+        <entry key="..\:/Users/guddu/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/drawable/ic_baseline_expand_more_24.xml" value="0.1555" />
+        <entry key="..\:/Users/guddu/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/drawable/ic_baseline_keyboard_arrow_right_24.xml" value="0.1" />
+        <entry key="..\:/Users/guddu/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.1555" />
+        <entry key="..\:/Users/guddu/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/drawable/ic_baseline_more_vert_24.xml" value="0.1555" />
+        <entry key="..\:/Users/guddu/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/drawable/menuicon.xml" value="0.1555" />
+        <entry key="..\:/Users/guddu/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/drawable/passwordlock.xml" value="0.1555" />
+        <entry key="..\:/Users/guddu/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/drawable/right_arrow.xml" value="0.1555" />
+        <entry key="..\:/Users/guddu/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/drawable/useravtar.xml" value="0.1555" />
+        <entry key="..\:/Users/guddu/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/layout/activity_addnew_deptdata.xml" value="0.24537037037037038" />
+        <entry key="..\:/Users/guddu/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/Users/guddu/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/layout/activity_main.xml" value="0.21195652173913043" />
+        <entry key="..\:/Users/guddu/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/layout/activity_profile.xml" value="0.25" />
+        <entry key="..\:/Users/guddu/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/layout/activity_signup.xml" value="0.264" />
+        <entry key="..\:/Users/guddu/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/layout/card_view.xml" value="0.25" />
+        <entry key="..\:/Users/guddu/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/layout/list_item.xml" value="0.20427350427350427" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
