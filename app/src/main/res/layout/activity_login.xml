@@ -58,7 +58,7 @@
             android:drawableLeft="@drawable/passwordlock"
             android:drawablePadding="5dp"
             android:hint="Password"
-            android:inputType="textEmailAddress"
+            android:inputType="numberPassword"
             android:padding="8dp"
             android:textSize="20sp" />
 

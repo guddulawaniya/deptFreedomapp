@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.example.debtfreedomapp.databinding.ActivitySignupBinding;
 import com.example.debtfreedomapp.models.Users;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
@@ -113,19 +114,29 @@ public class signup_Activity extends AppCompatActivity {
 
                             // Insert data using Constructor
                             // Begin
+                            String id = task.getResult().getUser().getUid();
+
+
+
                             Users user = new Users(binding.etname.getText().toString(),
-                                    binding.etemail.getText().toString(), binding.etpass.getText().toString());
+                                    binding.etemail.getText().toString(), binding.etpass.getText().toString(),id);
                             // End Insert data using Constructor
 
 
 
-                            String id = task.getResult().getUser().getUid();
-                            database.getReference().child("Users").child(id).setValue(user);
+
+                            database.getReference().child("Users").child((id)).setValue(user).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                @Override
+                                public void onSuccess(Void unused) {
+
+                                    Toast.makeText(signup_Activity.this, "User Created Successfully", Toast.LENGTH_SHORT).show();
+                                    Intent intent = new Intent(signup_Activity.this, Login_Activity.class);
+                                    startActivity(intent);
+                                }
+                            });
 
 
-                            Toast.makeText(signup_Activity.this, "User Created Successfully", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(signup_Activity.this, Login_Activity.class);
-                            startActivity(intent);
+
                         }
 
                         else {
@@ -135,4 +146,5 @@ public class signup_Activity extends AppCompatActivity {
                 });
 
     }
+
 }

@@ -22,6 +22,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class Login_Activity extends AppCompatActivity {
     ActivityLoginBinding binding;
@@ -30,6 +32,7 @@ public class Login_Activity extends AppCompatActivity {
     Button btnlogin;
     TextView signUpLink;
     FirebaseAuth auth;
+    FirebaseDatabase database;
     ProgressDialog progressDialog;
 
     @Override
@@ -42,8 +45,10 @@ public class Login_Activity extends AppCompatActivity {
         btnlogin=findViewById(R.id.btnlogin);
         signUpLink=findViewById(R.id.signUpLink);
 
+//        String username  = database.getReference().child("Users").child("");
         auth=FirebaseAuth.getInstance();
         progressDialog = new ProgressDialog(Login_Activity.this);
+
 
         progressDialog.setTitle("Logging In");
         progressDialog.setMessage("Please Wait While Log in");
@@ -73,6 +78,7 @@ public class Login_Activity extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             progressDialog.dismiss();
                             if (task.isSuccessful()) {
+
                                 Intent intent = new Intent(Login_Activity.this, profile_activity.class);
                                 startActivity(intent);
                                 finish();
@@ -98,16 +104,16 @@ public class Login_Activity extends AppCompatActivity {
         });
 
     }
-//    @Override
-//    public void onStart() {
-//        super.onStart();
-//        // Check if user is signed in (non-null) and update UI accordingly.
-//        FirebaseUser currentUser = auth.getCurrentUser();
-//        if(currentUser != null){
-//            Intent intent = new Intent(Login_Activity.this,profile_activity.class);
-//            startActivity(intent);
-//        }
-//    }
+    @Override
+    public void onStart() {
+        super.onStart();
+        // Check if user is signed in (non-null) and update UI accordingly.
+        FirebaseUser currentUser = auth.getCurrentUser();
+        if(currentUser != null){
+            Intent intent = new Intent(Login_Activity.this,profile_activity.class);
+            startActivity(intent);
+        }
+    }
 
 
 }

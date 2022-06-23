@@ -15,8 +15,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class profile_activity extends AppCompatActivity {
+
 
     ImageView addDebt,menuimage;
     DrawerLayout drawerLayout;
@@ -48,6 +50,7 @@ public class profile_activity extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
 
 
+
         currencySysmbolDropdown = findViewById(R.id.actv_currencySymbol);
 
         menuimage = findViewById(R.id.Menu);
@@ -68,6 +71,8 @@ public class profile_activity extends AppCompatActivity {
         currencySysmbolDropdown.setAdapter(adapter);
 
         auth=FirebaseAuth.getInstance();
+
+
 
 
         menuimage.setOnClickListener(new View.OnClickListener() {
