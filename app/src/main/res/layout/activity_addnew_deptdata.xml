@@ -143,6 +143,8 @@
                             android:hint="e.g.Visa 09000-XX_"
                             android:inputType="textEmailAddress"
                             android:padding="8dp"
+                            android:textColor="#201919"
+                            android:textColorHint="#9E9797"
                             android:textSize="14sp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -194,8 +196,10 @@
                             android:background="@drawable/inputround"
                             android:ems="10"
                             android:hint="e.g. 1234_"
-                            android:inputType="textEmailAddress"
+                            android:inputType="number"
                             android:padding="8dp"
+                            android:textColor="#201919"
+                            android:textColorHint="#9E9797"
                             android:textSize="14sp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -247,8 +251,10 @@
                             android:background="@drawable/inputround"
                             android:ems="10"
                             android:hint="e.g. 1234_"
-                            android:inputType="textEmailAddress"
+                            android:inputType="number"
                             android:padding="8dp"
+                            android:textColor="#201919"
+                            android:textColorHint="#9E9797"
                             android:textSize="14sp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -287,9 +293,11 @@
                             android:paddingLeft="8dp"
                             android:paddingTop="6dp"
                             android:paddingRight="4dp"
+                            android:src="@drawable/useravtar"
                             android:text="%"
-                            android:textSize="17dp"
-                            android:src="@drawable/useravtar" />
+                            android:textColor="#6E6767"
+                            android:textColorHint="#534B4B"
+                            android:textSize="17dp" />
 
                         <EditText
 
@@ -299,8 +307,10 @@
                             android:background="@drawable/inputround"
                             android:ems="10"
                             android:hint="e.g. 100%_"
-                            android:inputType="textEmailAddress"
+                            android:inputType="number"
                             android:padding="8dp"
+                            android:textColor="#201919"
+                            android:textColorHint="#9E9797"
                             android:textSize="14sp" />
                     </LinearLayout>
 
@@ -359,11 +369,13 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/inputround"
+                            android:hint="Select Card"
                             android:paddingStart="10dp"
                             android:paddingTop="0dp"
                             android:paddingBottom="0dp"
-                            android:textSize="14sp"
-                            />
+                            android:textColor="#201919"
+                            android:textColorHint="#9E9797"
+                            android:textSize="14sp" />
 
 
                     </com.google.android.material.textfield.TextInputLayout>
@@ -404,8 +416,10 @@
                             android:background="@drawable/inputround"
                             android:ems="10"
                             android:hint="TypeDate:00/00/0000"
-                            android:inputType="textEmailAddress"
+                            android:inputType="date"
                             android:padding="8dp"
+                            android:textColor="#201919"
+                            android:textColorHint="#9E9797"
                             android:textSize="14sp" />
                     </LinearLayout>
 
@@ -443,11 +457,13 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/inputround"
+                            android:hint="Select date"
                             android:paddingStart="10dp"
                             android:paddingTop="0dp"
                             android:paddingBottom="0dp"
-                            android:textSize="14sp"
-                            />
+                            android:textColor="#201919"
+                            android:textColorHint="#9E9797"
+                            android:textSize="14sp" />
 
 
                     </com.google.android.material.textfield.TextInputLayout>
@@ -497,6 +513,7 @@
                             <TextView
 
                                 android:layout_width="0dp"
+                                android:id="@+id/setname"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:gravity="center"
@@ -620,8 +637,8 @@
                 android:orientation="vertical"
                 >
 
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/debtrecyclerview"
+                <ListView
+                    android:id="@+id/deptlist"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
             </LinearLayout>
@@ -652,7 +669,6 @@
                     />
 
 
-
             </LinearLayout>
 
             <LinearLayout
@@ -660,10 +676,11 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-                <androidx.recyclerview.widget.RecyclerView
+                <ListView
+                    android:id="@+id/payofflist"
                     android:layout_width="match_parent"
-                    android:id="@+id/payoffrecyclerview"
-                    android:layout_height="match_parent"/>
+                    android:layout_height="match_parent"
+                    android:layout_weight="6" />
             </LinearLayout>
 
 

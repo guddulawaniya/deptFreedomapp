@@ -26,6 +26,7 @@ public class signup_Activity extends AppCompatActivity {
     FirebaseAuth mAuth;
     ProgressDialog Loading;
 
+// Declaration of variable
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,34 +34,31 @@ public class signup_Activity extends AppCompatActivity {
         binding = ActivitySignupBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        // Binding Syntax
 
         mAuth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
 
-         Loading = new ProgressDialog(signup_Activity.this);
+        Loading = new ProgressDialog(signup_Activity.this);
 
         Loading.setTitle("Creating Account");
         Loading.setMessage("Please Wait While Creating Account");
 
-
+        // when Sign up button pressed the function call
 
         binding.signupbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
-
-
-                // Validation for fields of Signup form
-                // Begin
-
-
+         // Syntax of function call set on Click Listner
 
                 if (TextUtils.isEmpty(binding.etname.getText().toString())){
                     binding.etname.setError("Please Enter Name");
                     binding.etname.requestFocus();
                     return;
                 }
+
+                // first input type variable saved in string method
+
                 if (TextUtils.isEmpty(binding.etemail.getText().toString())){
                     binding.etemail.setError("Please Enter Email");
                     binding.etemail.requestFocus();
@@ -88,7 +86,7 @@ public class signup_Activity extends AppCompatActivity {
         });
 
 
-
+// if user want to migrate login page then login page transfer link by intent
 
         binding.LoginLink.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -99,12 +97,19 @@ public class signup_Activity extends AppCompatActivity {
 
             }
         });
+
     }
+
+
     private void signup(){
 
-        mAuth.createUserWithEmailAndPassword
-                        (binding.etemail.getText().toString(), binding.etpass.getText().toString()).
+        mAuth.createUserWithEmailAndPassword (binding.etemail.getText().toString(), binding.etpass.getText().toString()).
                 addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+
+
+       // Syntax for singup function on clickLinstner
+
+
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
 
@@ -117,9 +122,13 @@ public class signup_Activity extends AppCompatActivity {
                             String id = task.getResult().getUser().getUid();
 
 
+// user defined constructors with user class
+
 
                             Users user = new Users(binding.etname.getText().toString(),
                                     binding.etemail.getText().toString(), binding.etpass.getText().toString(),id);
+
+
                             // End Insert data using Constructor
 
 
@@ -134,7 +143,7 @@ public class signup_Activity extends AppCompatActivity {
                                     startActivity(intent);
                                 }
                             });
-
+//
 
 
                         }

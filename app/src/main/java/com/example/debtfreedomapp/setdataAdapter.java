@@ -12,10 +12,10 @@ import java.util.ArrayList;
 
 public class setdataAdapter extends RecyclerView.Adapter<setdataAdapter.viewholder> {
 
-    ArrayList<User> list;
+    ArrayList<getdatamodel> list;
     Context context;
 
-    public setdataAdapter(ArrayList<User> list, Context context) {
+    public setdataAdapter(ArrayList<getdatamodel> list, Context context) {
         this.list = list;
         this.context = context;
     }
@@ -30,11 +30,11 @@ public class setdataAdapter extends RecyclerView.Adapter<setdataAdapter.viewhold
 
     @Override
     public void onBindViewHolder(@NonNull viewholder holder, int position) {
-        User user = list.get(position);
+        getdatamodel user = list.get(position);
 
-        holder.name.setText(user.getGname());
-        holder.sbalance.setText(user.getGstarting_balance());
-        holder.remdata.setText(user.getGremdate());
+        holder.name.setText(user.getUsername());
+//        holder.sbalance.setText(user.getGstarting_balance());
+//        holder.remdata.setText(user.getGremdate());
 
     }
 

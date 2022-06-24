@@ -27,7 +27,6 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class Login_Activity extends AppCompatActivity {
     ActivityLoginBinding binding;
-
     EditText etemail,etpass;
     Button btnlogin;
     TextView signUpLink;
@@ -35,15 +34,22 @@ public class Login_Activity extends AppCompatActivity {
     FirebaseDatabase database;
     ProgressDialog progressDialog;
 
+    // declartion of variable
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityLoginBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        // Binding Syntax
+
         etemail=findViewById(R.id.etemail);
         etpass=findViewById(R.id.mypass);
         btnlogin=findViewById(R.id.btnlogin);
         signUpLink=findViewById(R.id.signUpLink);
+
+
 
 //        String username  = database.getReference().child("Users").child("");
         auth=FirebaseAuth.getInstance();
@@ -52,6 +58,7 @@ public class Login_Activity extends AppCompatActivity {
 
         progressDialog.setTitle("Logging In");
         progressDialog.setMessage("Please Wait While Log in");
+
 
         binding.btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -94,6 +101,7 @@ public class Login_Activity extends AppCompatActivity {
         });
 
 
+
         binding.signUpLink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -104,6 +112,7 @@ public class Login_Activity extends AppCompatActivity {
         });
 
     }
+
     @Override
     public void onStart() {
         super.onStart();

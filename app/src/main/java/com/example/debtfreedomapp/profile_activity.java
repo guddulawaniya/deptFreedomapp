@@ -37,6 +37,7 @@ public class profile_activity extends AppCompatActivity {
 
     AutoCompleteTextView currencySysmbolDropdown;
 
+
     String[] currency_symbols = {
             "$",
             "₹",
@@ -44,15 +45,16 @@ public class profile_activity extends AppCompatActivity {
 
     };
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-
+        // Syntax of Binding
 
         currencySysmbolDropdown = findViewById(R.id.actv_currencySymbol);
-
         menuimage = findViewById(R.id.Menu);
         addDebt  = findViewById(R.id.addDebt);
         drawerLayout = findViewById(R.id.drawer);
@@ -67,15 +69,15 @@ public class profile_activity extends AppCompatActivity {
         hiddenView3 = findViewById(R.id.hidden_view3);
         hiddenView4 = findViewById(R.id.hidden_view4);
 
+
         ArrayAdapter<String> adapter = new ArrayAdapter(profile_activity.this, R.layout.list_item, currency_symbols);
         currencySysmbolDropdown.setAdapter(adapter);
 
+
         auth=FirebaseAuth.getInstance();
 
-
-
-
         menuimage.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
 
@@ -87,6 +89,8 @@ public class profile_activity extends AppCompatActivity {
             }
         });
 
+
+
         close.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -94,23 +98,18 @@ public class profile_activity extends AppCompatActivity {
             }
         });
 
+
         arrow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
 
                 if (hiddenView.getVisibility() == View.VISIBLE) {
-
-
                     hiddenView.setVisibility(View.GONE);
                     arrow.setImageResource(R.drawable.right_arrow);
 
                 }
-
-
                 else {
-
-
                     hiddenView.setVisibility(View.VISIBLE);
                     arrow.setImageResource(R.drawable.down_arrow);
 
@@ -200,6 +199,8 @@ public class profile_activity extends AppCompatActivity {
             }
         });
 
+
+
         addDebt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -221,4 +222,5 @@ public class profile_activity extends AppCompatActivity {
 
 
     }
+
 }
