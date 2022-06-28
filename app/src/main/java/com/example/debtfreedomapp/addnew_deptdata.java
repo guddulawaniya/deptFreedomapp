@@ -83,6 +83,7 @@ public class addnew_deptdata extends AppCompatActivity {
 
 // Binding of variable  Syntax //
 
+
         mDatabase = FirebaseDatabase.getInstance().getReference();
         actv_categoryDropdown = findViewById(R.id.category);
         reninderDropDown = findViewById(R.id.remdate);
@@ -240,12 +241,12 @@ public class addnew_deptdata extends AppCompatActivity {
 //                    TextView sbalance = findViewById(R.id.setsbalance);
 //                    TextView remdate = findViewById(R.id.setremdate);
 
-                    String text = user.getTextname();
-
-                    sdebtname.setText(user.getTextname());
+//                    String text = user.getTextname();
+//
+//                    sdebtname.setText(user.getTextname());
 //                    sbalance.setText(user.getStarting_balance());
 //                    remdate.setText(user.getRemdate());
-                    list.add(text);
+//                    list.add(text);
                 }
             }
 

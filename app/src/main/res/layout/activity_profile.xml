@@ -212,30 +212,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
-        <!--<androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/black"
-            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"
-            app:title="ToolBars"
-            app:titleTextColor="@color/white"
-            >
-        </androidx.appcompat.widget.Toolbar>-->
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:id="@+id/toolbar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@color/black"-->
+<!--            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"-->
+<!--            app:title="ToolBars"-->
+<!--            app:titleTextColor="@color/white"-->
+<!--            >-->
+<!--        </androidx.appcompat.widget.Toolbar>-->
     </RelativeLayout>
 
 
 
-<!--    <com.google.android.material.navigation.NavigationView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:id="@+id/navmenu"-->
-<!--        android:layout_gravity="right"-->
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navmenu"
+        android:layout_gravity="right"
 
-<!--        >-->
+        >
 
-<!--        <include layout="@layout/card_view"/>-->
+        <include layout="@layout/card_view"/>
 
-<!--    </com.google.android.material.navigation.NavigationView>-->
+    </com.google.android.material.navigation.NavigationView>
 
 </androidx.drawerlayout.widget.DrawerLayout>

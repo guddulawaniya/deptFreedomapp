@@ -32,8 +32,8 @@ public class setdataAdapter extends RecyclerView.Adapter<setdataAdapter.viewhold
     public void onBindViewHolder(@NonNull viewholder holder, int position) {
         getdatamodel user = list.get(position);
 
-        holder.name.setText(user.getUsername());
-//        holder.sbalance.setText(user.getGstarting_balance());
+//        holder.name.setText(user.getUsername());
+////        holder.sbalance.setText(user.getGstarting_balance());
 //        holder.remdata.setText(user.getGremdate());
 
     }

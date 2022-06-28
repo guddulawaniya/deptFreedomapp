@@ -44,6 +44,7 @@ public class Login_Activity extends AppCompatActivity {
 
         // Binding Syntax
 
+        getSupportActionBar().hide();
         etemail=findViewById(R.id.etemail);
         etpass=findViewById(R.id.mypass);
         btnlogin=findViewById(R.id.btnlogin);

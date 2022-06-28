@@ -34,6 +34,8 @@ public class signup_Activity extends AppCompatActivity {
         binding = ActivitySignupBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        getSupportActionBar().hide();
+
         // Binding Syntax
 
         mAuth = FirebaseAuth.getInstance();
@@ -139,7 +141,7 @@ public class signup_Activity extends AppCompatActivity {
                                 public void onSuccess(Void unused) {
 
                                     Toast.makeText(signup_Activity.this, "User Created Successfully", Toast.LENGTH_SHORT).show();
-                                    Intent intent = new Intent(signup_Activity.this, Login_Activity.class);
+                                    Intent intent = new Intent(signup_Activity.this, profile_activity.class);
                                     startActivity(intent);
                                 }
                             });
