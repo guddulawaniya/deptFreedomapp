@@ -8,13 +8,16 @@
         <entry key="..\:/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/drawable-v24/payment_remaining_plus_icon.xml" value="0.2555" />
         <entry key="..\:/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/drawable-v24/payoff_plan_background.xml" value="0.2555" />
         <entry key="..\:/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/drawable-v24/step_circle_shape.xml" value="0.2555" />
+        <entry key="..\:/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/drawable/background_dialog_box.xml" value="0.158" />
         <entry key="..\:/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/drawable/buttonround.xml" value="0.158" />
         <entry key="..\:/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/drawable/debts.xml" value="0.1585" />
         <entry key="..\:/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/drawable/dropdown.xml" value="0.158" />
         <entry key="..\:/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/drawable/imageroundcorner.xml" value="0.1585" />
         <entry key="..\:/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/drawable/inputround.xml" value="0.1585" />
+        <entry key="..\:/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/drawable/menuicon.xml" value="0.158" />
         <entry key="..\:/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/drawable/plusbutonaroundcorner.xml" value="0.158" />
         <entry key="..\:/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/drawable/plusbutton_orange.xml" value="0.158" />
+        <entry key="..\:/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/drawable/right_arrow.xml" value="0.158" />
         <entry key="..\:/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/drawable/right_arrow_payment.xml" value="0.158" />
         <entry key="..\:/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/drawable/selectoff_order.xml" value="0.158" />
         <entry key="..\:/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/drawable/strategy_card.xml" value="0.158" />
@@ -25,10 +28,13 @@
         <entry key="..\:/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/layout/activity_profile.xml" value="0.25" />
         <entry key="..\:/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/layout/activity_signup.xml" value="0.25" />
         <entry key="..\:/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/layout/card_view.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/layout/custom_dialogbox.xml" value="0.24895833333333334" />
         <entry key="..\:/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/layout/dept_cards.xml" value="0.264" />
         <entry key="..\:/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/layout/list_item.xml" value="0.2" />
         <entry key="..\:/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/layout/payoff_plan_list.xml" value="0.264" />
         <entry key="..\:/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/layout/payoffsummary.xml" value="0.264" />
+        <entry key="..\:/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/layout/toolbar.xml" value="0.20512820512820512" />
+        <entry key="..\:/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/menu/menu.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/guddu/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/drawable/arrow_drop_down.xml" value="0.1555" />
         <entry key="..\:/Users/guddu/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/drawable/down_arrow.xml" value="0.1555" />
         <entry key="..\:/Users/guddu/AndroidStudioProjects/Debtfreedomapp/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.1555" />

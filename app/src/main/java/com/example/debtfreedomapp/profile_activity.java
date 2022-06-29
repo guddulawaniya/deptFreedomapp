@@ -1,11 +1,15 @@
 package com.example.debtfreedomapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
@@ -13,6 +17,8 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
+import android.widget.Toolbar;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
@@ -20,7 +26,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class profile_activity extends AppCompatActivity {
 
 
-    ImageView addDebt,menuimage;
+    ImageView addDebt, menuimage;
     DrawerLayout drawerLayout;
     FirebaseAuth auth;
     Button close;
@@ -29,6 +35,7 @@ public class profile_activity extends AppCompatActivity {
     ImageButton arrow2;
     ImageButton arrow3;
     ImageButton arrow4;
+    ImageView back;
     LinearLayout hiddenView;
     LinearLayout hiddenView2;
     LinearLayout hiddenView3;
@@ -46,7 +53,6 @@ public class profile_activity extends AppCompatActivity {
     };
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,7 +62,7 @@ public class profile_activity extends AppCompatActivity {
 
         currencySysmbolDropdown = findViewById(R.id.actv_currencySymbol);
         menuimage = findViewById(R.id.Menu);
-        addDebt  = findViewById(R.id.addDebt);
+        addDebt = findViewById(R.id.addDebt);
         drawerLayout = findViewById(R.id.drawer);
         close = findViewById(R.id.close);
         logout = findViewById(R.id.logout);
@@ -74,7 +80,8 @@ public class profile_activity extends AppCompatActivity {
         currencySysmbolDropdown.setAdapter(adapter);
 
 
-        auth=FirebaseAuth.getInstance();
+        auth = FirebaseAuth.getInstance();
+
 
         menuimage.setOnClickListener(new View.OnClickListener() {
 
@@ -82,10 +89,11 @@ public class profile_activity extends AppCompatActivity {
             public void onClick(View view) {
 
                 drawerLayout.openDrawer(Gravity.RIGHT);
-                /*auth.signOut();
-                Intent intent = new Intent(ProfileActivity.this, MainActivity.class);
-                startActivity(intent);
-*/
+
+//                auth.signOut();
+//                Intent intent = new Intent(ProfileActivity.this, MainActivity.class);
+//                startActivity(intent);
+
             }
         });
 
@@ -108,8 +116,7 @@ public class profile_activity extends AppCompatActivity {
                     hiddenView.setVisibility(View.GONE);
                     arrow.setImageResource(R.drawable.right_arrow);
 
-                }
-                else {
+                } else {
                     hiddenView.setVisibility(View.VISIBLE);
                     arrow.setImageResource(R.drawable.down_arrow);
 
@@ -121,27 +128,16 @@ public class profile_activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                // If the CardView is already expanded, set its visibility
-                // to gone and change the expand less icon to expand more.
+
                 if (hiddenView2.getVisibility() == View.VISIBLE) {
 
-                    // The transition of the hiddenView is carried out
-                    // by the TransitionManager class.
-                    // Here we use an object of the AutoTransition
-                    // Class to create a default transition.
-                    //*TransitionManager.beginDelayedTransition(cardView,
-                    // new AutoTransition());*//*
                     hiddenView2.setVisibility(View.GONE);
                     arrow2.setImageResource(R.drawable.right_arrow);
 
                 }
 
-                // If the CardView is not expanded, set its visibility
-                // to visible and change the expand more icon to expand less.
                 else {
 
-                    //*TransitionManager.beginDelayedTransition(cardView,
-                    // new AutoTransition());*//*
                     hiddenView2.setVisibility(View.VISIBLE);
                     arrow2.setImageResource(R.drawable.down_arrow);
 
@@ -161,10 +157,7 @@ public class profile_activity extends AppCompatActivity {
                     hiddenView3.setVisibility(View.GONE);
                     arrow3.setImageResource(R.drawable.right_arrow);
 
-                }
-
-
-                else {
+                } else {
 
 
                     hiddenView3.setVisibility(View.VISIBLE);
@@ -186,10 +179,7 @@ public class profile_activity extends AppCompatActivity {
                     hiddenView4.setVisibility(View.GONE);
                     arrow4.setImageResource(R.drawable.right_arrow);
 
-                }
-
-
-                else {
+                } else {
 
 
                     hiddenView4.setVisibility(View.VISIBLE);
@@ -198,7 +188,6 @@ public class profile_activity extends AppCompatActivity {
                 }
             }
         });
-
 
 
         addDebt.setOnClickListener(new View.OnClickListener() {
@@ -214,7 +203,7 @@ public class profile_activity extends AppCompatActivity {
             public void onClick(View view) {
 
                 auth.signOut();
-                Intent intent = new Intent(profile_activity.this, signup_Activity.class);
+                Intent intent = new Intent(profile_activity.this, Login_Activity.class);
                 startActivity(intent);
 
             }
@@ -222,5 +211,4 @@ public class profile_activity extends AppCompatActivity {
 
 
     }
-
 }
